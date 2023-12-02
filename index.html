@@ -11,6 +11,8 @@
     <h1 class="header__title">운동 기록 사이트</h1>
   </header>
 
+
+  
   <!-- navigation 영역-->
   <nav class="nav">
   <!-- navigation 리스트-->
@@ -31,7 +33,13 @@
   </nav>
 
   <main class="main">
-    <section class="workout">
+    <!-- class name 에 visible이 붙어있을경우 display block content만 잇을경우에는 display none-->
+    <section class="content visible" id="Home_section">
+      <h2>홈 섹션</h2>
+      <p>이곳은 홈 섹션입니다.</p>
+    </section>
+
+    <section class="content" id="Work_section">
       <h2 class="workout__title">운동 기록</h2>
       <form class="workout__form">
         <div class="workout__form-group">
@@ -50,7 +58,7 @@
       </form>
     </section>
 
-    <section class="statistics">
+    <section class="content" id="Statistics_section">
       <h2 class="statistics__title">통계</h2>
       <div class="statistics__chart">
         <!-- 통계 차트를 표시하는 요소 -->
@@ -61,5 +69,7 @@
   <footer class="footer">
     <p class="footer__text">© 2023 운동 기록 사이트. All rights reserved.</p>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>

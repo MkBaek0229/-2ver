@@ -13,6 +13,17 @@ body {
   margin: 0;
 }
 
+/* 컨텐츠 섹션 스타일 */
+.content {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+}
+
 .nav {
   background-color: #ff9900;
   padding: 10px;

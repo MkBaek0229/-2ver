@@ -10,3 +10,34 @@ const $Statistics = document.getElementById("Statistics")
 
 const $Setting = document.getElementById("Setting")
 
+
+// 각 컨텐츠 들을 보여주고있는 section들도 dom으로 불러오자
+
+const $Home_content = document.getElementById("Home_section")
+
+const $Work_section = document.getElementById("Work_section")
+
+const $Statistics_section = document.getElementById("Statistics_section")
+
+
+// Home 버튼 눌렷을때 발생하는일들.
+$Home.addEventListener("click" , function() {
+    // class 이름으로 화면 보여주기 안보여주기 이용 
+    $Work_section.classList.remove('visible');
+    $Statistics_section.classList.remove('visible');
+    $Home_content.classList.add('visible');
+})
+
+$Record.addEventListener("click" , function() {
+    $Statistics_section.classList.remove('visible');
+    $Home_content.classList.remove('visible');
+    $Work_section.classList.add('visible');
+})
+
+$Statistics.addEventListener("click" , function() {
+    $Home.classList.remove('visible');
+    $Work_section.classList.remove('visible');
+    $Statistics_section.classList.add('visible');
+})
+
+$Setting.addEventListener("click" , () => console.log("Home"))
