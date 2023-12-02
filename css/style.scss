@@ -1,80 +1,116 @@
+// 변수
+$primary-color: #3366cc;
+$secondary-color: #ff9900;
+
+// 전역 스타일
 body {
-    background-color: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+// 헤더
+.header {
+  background-color: $primary-color;
+  padding: 20px;
+  color: white;
+
+  &__title {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+
+
+// 내비게이션
+.nav {
+  background-color: $secondary-color;
+  padding: 10px;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+
+  &__link {
+    color: white;
+    text-decoration: none;
+}
+}
+
+
+
+
+
+
+// 메인 콘텐츠
+.main {
+  padding: 20px;
+}
+
+.workout {
+  &__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &___form {
+    margin-bottom: 20px;
   }
   
-  .header {
-    height: 200px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    background: linear-gradient(45deg, blueviolet, crimson);
-    padding: 8px 8px 50px;
-    overflow: hidden;
-  
-    &__logo {
-      margin-bottom: 30px;
-    }
-  
-    &__right {
-      position: relative;
-      width: 100%;
-      max-width: 1200px;
-      min-width: 800px;
-      height: 120px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+  &__form-group {
+    margin-bottom: 10px;
   }
-  
-  .nav {
-    margin-top: 20px;
-    text-align: center;
-  
-    &__inner {
-      font-size: 1.5em;
-    }
-  
-    &__button {
-      margin-top: 40px;
-    }
-  
-    &__btn {
-      position: relative;
-      border: none;
-      display: inline-block;
-      padding: 15px 30px;
-      border-radius: 15px;
-      font-family: "paybooc-Light", sans-serif;
-      box-shadow: 0 15px 35px rgba(255, 2, 2, 0.2);
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.25s;
-      letter-spacing: 2px;
-      transform: scale(1.2);
-      cursor: pointer;
-  
-      &:hover {
-        background-color: #ff0000;
-      }
-    }
+
+  &__label {
+    display: block;
+    margin-bottom: 5px;
   }
-  
-  .section {
-    &__div {
-      padding: 20px;
-      border: 1px solid #ccc;
-      margin: 10px 0;
-  
-      &--blur {
-        filter: blur(2px);
-      }
-  
-      &--focused {
-        outline: 2px solid #ff0000;
-      }
-    }
+
+  &__input {
+    width: 100%;
+    padding: 5px;
   }
-  
+
+  &__button {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+}
+
+
+.statistics {
+
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  } 
+
+  &__chart {
+    /* 통계 차트 스타일 */
+  }
+}
+
+
+// 푸터
+.footer {
+  background-color: $primary-color;
+  padding: 10px;
+  color: white;
+
+  &__text {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+

@@ -1,71 +1,81 @@
+@charset "UTF-8";
 body {
-  background-color: #fafafa;
+  font-family: Arial, sans-serif;
 }
 
 .header {
-  height: 200px;
-  color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  background: linear-gradient(45deg, blueviolet, crimson);
-  padding: 8px 8px 50px;
-  overflow: hidden;
+  background-color: #3366cc;
+  padding: 20px;
+  color: white;
 }
-.header__logo {
-  margin-bottom: 30px;
-}
-.header__right {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  min-width: 800px;
-  height: 120px;
-  margin: 0 auto;
-  padding: 0 20px;
+.header__title {
+  font-size: 24px;
+  margin: 0;
 }
 
 .nav {
-  margin-top: 20px;
-  text-align: center;
+  background-color: #ff9900;
+  padding: 10px;
 }
-.nav__inner {
-  font-size: 1.5em;
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.nav__button {
-  margin-top: 40px;
-}
-.nav__btn {
-  position: relative;
-  border: none;
+.nav__item {
   display: inline-block;
-  padding: 15px 30px;
-  border-radius: 15px;
-  font-family: "paybooc-Light", sans-serif;
-  box-shadow: 0 15px 35px rgba(255, 2, 2, 0.2);
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.25s;
-  letter-spacing: 2px;
-  transform: scale(1.2);
-  cursor: pointer;
+  margin-right: 10px;
 }
-.nav__btn:hover {
-  background-color: #ff0000;
+.nav__link {
+  color: white;
+  text-decoration: none;
 }
 
-.section__div {
+.main {
   padding: 20px;
-  border: 1px solid #ccc;
-  margin: 10px 0;
 }
-.section__div--blur {
-  filter: blur(2px);
+
+.workout__title {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-.section__div--focused {
-  outline: 2px solid #ff0000;
+.workout___form {
+  margin-bottom: 20px;
+}
+.workout__form-group {
+  margin-bottom: 10px;
+}
+.workout__label {
+  display: block;
+  margin-bottom: 5px;
+}
+.workout__input {
+  width: 100%;
+  padding: 5px;
+}
+.workout__button {
+  background-color: #3366cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+.statistics__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.statistics__chart {
+  /* 통계 차트 스타일 */
+}
+
+.footer {
+  background-color: #3366cc;
+  padding: 10px;
+  color: white;
+}
+.footer__text {
+  font-size: 12px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
