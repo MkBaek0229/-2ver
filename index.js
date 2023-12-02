@@ -19,25 +19,34 @@ const $Work_section = document.getElementById("Work_section")
 
 const $Statistics_section = document.getElementById("Statistics_section")
 
+const $Setting_section = document.getElementById("Setting_section")
 
 // Home 버튼 눌렷을때 발생하는일들.
 $Home.addEventListener("click" , function() {
     // class 이름으로 화면 보여주기 안보여주기 이용 
-    $Work_section.classList.remove('visible');
-    $Statistics_section.classList.remove('visible');
-    $Home_content.classList.add('visible');
+    $Work_section.classList.remove('Work--visible');
+    $Statistics_section.classList.remove('Statistics--visible');
+    $Setting_section.classList.remove('Setting--visible');
+    $Home_content.classList.add('Home--visible');
 })
 
 $Record.addEventListener("click" , function() {
-    $Statistics_section.classList.remove('visible');
-    $Home_content.classList.remove('visible');
-    $Work_section.classList.add('visible');
+    $Statistics_section.classList.remove('Statistics--visible');
+    $Home_content.classList.remove('Home--visible');
+    $Setting_section.classList.remove('Setting--visible');
+    $Work_section.classList.add('Work--visible');
 })
 
 $Statistics.addEventListener("click" , function() {
-    $Home.classList.remove('visible');
-    $Work_section.classList.remove('visible');
-    $Statistics_section.classList.add('visible');
+    $Home.classList.remove('Home--visible');
+    $Work_section.classList.remove('Work--visible');
+    $Setting_section.classList.remove('Setting--visible');
+    $Statistics_section.classList.add('Statistics--visible');
 })
 
-$Setting.addEventListener("click" , () => console.log("Home"))
+$Setting.addEventListener("click" , function() {
+    $Home.classList.remove('Home--visible');
+    $Work_section.classList.remove('Work--visible');
+    $Statistics_section.classList.remove('Statistics--visible');
+    $Setting_section.classList.add('Setting--visible');
+})

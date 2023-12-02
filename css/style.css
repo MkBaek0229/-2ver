@@ -13,13 +13,30 @@ body {
   margin: 0;
 }
 
-/* 컨텐츠 섹션 스타일 */
+/* 컨텐츠 섹션 스타일  
+  content는 block 근데 visible이붙으면 block이됨
+*/
 .content {
   display: none;
   transition: opacity 0.3s ease-in-out;
 }
 
-.visible {
+.Home--visible {
+  display: block;
+  opacity: 1;
+}
+
+.Work--visible {
+  display: block;
+  opacity: 1;
+}
+
+.Statistics--visible {
+  display: block;
+  opacity: 1;
+}
+
+.Setting--visible {
   display: block;
   opacity: 1;
 }
