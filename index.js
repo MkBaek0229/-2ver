@@ -23,10 +23,17 @@ const $Setting_section = document.getElementById("Setting_section")
 
 // Home 버튼 눌렷을때 발생하는일들.
 $Home.addEventListener("click" , function() {
-    // class 이름으로 화면 보여주기 안보여주기 이용 
+   // 1. class name을 조작하여 Home 영역의 내용만을 보여줄수있도록 클래스네임 부여.
+
+    /* <section class="content Home" id="Home_section"> 
+        기존의 Home_section의 클래스명을 보면 content Home이다 css에서 클래스명이 content인 element들을 display:none으로 해놓아서 보이지않을것이다.
+    */
+   // 각 영역이름-visible 클래스명을 부여하는순간 none이였던 display : block이 되도록 해놓았다.
+   // Home버튼을 눌렀을때 해당 영역의 컨텐츠만을 보여줘야하기때문에 다른 영역이 dislay: block이되있는 일이 없도록 영역이름-visible 클래스네임을 제거해준다.
     $Work_section.classList.remove('Work--visible');
     $Statistics_section.classList.remove('Statistics--visible');
     $Setting_section.classList.remove('Setting--visible');
+    // 그리고 Home 영역만 display: block으로 보여주게된다.
     $Home_content.classList.add('Home--visible');
 })
 
@@ -38,14 +45,14 @@ $Record.addEventListener("click" , function() {
 })
 
 $Statistics.addEventListener("click" , function() {
-    $Home.classList.remove('Home--visible');
+    $Home_content.classList.remove('Home--visible');
     $Work_section.classList.remove('Work--visible');
     $Setting_section.classList.remove('Setting--visible');
     $Statistics_section.classList.add('Statistics--visible');
 })
 
 $Setting.addEventListener("click" , function() {
-    $Home.classList.remove('Home--visible');
+    $Home_content.classList.remove('Home--visible');
     $Work_section.classList.remove('Work--visible');
     $Statistics_section.classList.remove('Statistics--visible');
     $Setting_section.classList.add('Setting--visible');

@@ -33,12 +33,20 @@
   </nav>
 
   <main class="main">
-    <!-- class name 에 visible이 붙어있을경우 display block content만 잇을경우에는 display none-->
-    <section class="content Home" id="Home_section">
-      <h2>홈 섹션</h2>
-      <p>이곳은 홈 섹션입니다.</p>
+
+    <!-- 홈 영역 -->
+    <section class="content Home--visible" id="Home_section">
+      <h2 class="Home_title">홈 섹션</h2>
+        <div class="Home_wrap" id="Home_wrap">
+           <div class="Home_quote" id="Home_quote">
+              <span></span>
+              <span></span>
+           </div>
+        </div>
     </section>
 
+
+    <!-- 운동 기록 영역-->
     <section class="content workout" id="Work_section">
       <h2 class="workout__title">운동 기록</h2>
       <form class="workout__form">
@@ -58,6 +66,8 @@
       </form>
     </section>
 
+
+    <!-- 통계 영역-->
     <section class="content statistics" id="Statistics_section">
       <h2 class="statistics__title">통계</h2>
       <div class="statistics__chart">
@@ -65,6 +75,7 @@
       </div>
     </section>
 
+    <!-- 설정 화면 -->
     <section class="content" id="Setting_section">
       <h2 class="setting_title">세팅 화면입니다.</h2>
 
@@ -72,9 +83,10 @@
   </main>
 
   <footer class="footer">
-    <p class="footer__text">© 2023 운동 기록 사이트. All rights reserved.</p>
+    <p class="footer__text">© 백민기 제작 운동 기록 사이트. All rights reserved.</p>
   </footer>
 
   <script src="index.js"></script>
+  <script src="quote.js"></script>
 </body>
 </html>

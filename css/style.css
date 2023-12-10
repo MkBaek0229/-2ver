@@ -14,7 +14,7 @@ body {
 }
 
 /* 컨텐츠 섹션 스타일  
-  content는 block 근데 visible이붙으면 block이됨
+  content 기본 none; 근데 visible이붙으면 block이됨
 */
 .content {
   display: none;
